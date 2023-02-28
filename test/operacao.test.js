@@ -50,7 +50,7 @@ describe("Teste da calculadora", () => {
     expect(resultado).toEqual(0.15555555555555556);
 
     resultado = () => calculadora.divi(8, 0);
-    expect(resultado).toEqual("Erro");
+    expect(resultado).toThrow("Erro");
 
     resultado = calculadora.divi(9, 10);
     expect(resultado).toEqual(0.9);
